@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie website</title>
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1>Movie<span>Hub</span></h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="menu-btn" id="menuBtn">
+                ☰
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO MOVIEHUB</p>
+
+            <h2>Unlimited Movies,<br>
+                <span>Unlimited Entertainment</span>
+            </h2>
+
+            <p>
+                Watch the latest movies, popular movies and
+                trending movies all in one place.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#movies" class="btn">Explore Movies</a>
+                <a href="#popular" class="btn secondary">Popular Movies</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search movies..."
+        >
+
+    </section>
+
+
+    <!-- Movies Section -->
+    <section class="movies-section" id="movies">
+
+        <div class="section-title">
+            <h2>Latest Movies</h2>
+            <p>Explore our latest movie collection</p>
+        </div>
+
+
+        <div class="movie-container" id="movieContainer">
+
+            <!-- Movie 1 -->
+            <div class="movie-card" data-title="Avengers Endgame">
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+                    alt="Avengers Endgame"
+                >
+
+                <div class="movie-info">
+                    <h3>Avengers: Endgame</h3>
+                    <p>Action | Adventure</p>
+                    <span>⭐ 8.4</span>
+                </div>
+
+            </div>
+
+
+            <!-- Movie 2 -->
+            <div class="movie-card" data-title="Spider Man">
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+                    alt="Spider Man"
+                >
+
+                <div class="movie-info">
+                    <h3>Spider-Man</h3>
+                    <p>Action | Adventure</p>
+                    <span>⭐ 8.2</span>
+                </div>
+
+            </div>
+
+
+            <!-- Movie 3 -->
+            <div class="movie-card" data-title="Batman">
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+                    alt="Batman"
+                >
+
+                <div class="movie-info">
+                    <h3>The Batman</h3>
+                    <p>Action | Crime</p>
+                    <span>⭐ 8.0</span>
+                </div>
+
+            </div>
+
+
+            <!-- Movie 4 -->
+            <div class="movie-card" data-title="Joker">
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                    alt="Joker"
+                >
+
+                <div class="movie-info">
+                    <h3>Joker</h3>
+                    <p>Crime | Drama</p>
+                    <span>⭐ 8.5</span>
+                </div>
+
+            </div>
+
+
+            <!-- Movie 5 -->
+            <div class="movie-card" data-title="Interstellar">
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                    alt="Interstellar"
+                >
+
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <p>Sci-Fi | Drama</p>
+                    <span>⭐ 8.7</span>
+                </div>
+
+            </div>
+
+
+            <!-- Movie 6 -->
+            <div class="movie-card" data-title="Inception">
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+                    alt="Inception"
+                >
+
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p>Sci-Fi | Thriller</p>
+                    <span>⭐ 8.8</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Section -->
+    <section class="popular-section" id="popular">
+
+        <div class="section-title">
+            <h2>Popular Movies</h2>
+            <p>Most watched movies</p>
+        </div>
+
+        <div class="popular-content">
+
+            <div>
+                <h2>Watch Your Favorite Movies</h2>
+
+                <p>
+                    Discover amazing movies from different genres.
+                    Find action, comedy, thriller, science fiction
+                    and adventure movies.
+                </p>
+
+                <button class="btn" onclick="showMessage()">
+                    Start Watching
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <div class="section-title">
+            <h2>About MovieHub</h2>
+        </div>
+
+        <p>
+            MovieHub is a frontend movie website project created
+            using HTML, CSS and JavaScript. It provides a simple
+            and responsive interface for exploring movies.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Movie<span>Hub</span></h2>
+
+        <p>
+            © 2026 MovieHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
