@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movie website</title>
+
+    <title>MovieHub - Movies & Entertainment</title>
+
     <link rel="stylesheet" href="style1.css">
     <script src="script.js"></script>
-    
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
+
     <header>
+
         <nav class="navbar">
 
             <div class="logo">
@@ -19,10 +24,23 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#popular">Popular</a></li>
-                <li><a href="#about">About</a></li>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#movies">Movies</a>
+                </li>
+
+                <li>
+                    <a href="#popular">Popular</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
             </ul>
 
             <div class="menu-btn" id="menuBtn">
@@ -30,28 +48,41 @@
             </div>
 
         </nav>
+
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- ================= HERO SECTION ================= -->
+
     <section class="hero" id="home">
 
         <div class="hero-content">
 
-            <p class="small-title">WELCOME TO MOVIEHUB</p>
+            <p class="small-title">
+                WELCOME TO MOVIEHUB
+            </p>
 
-            <h2>Unlimited Movies,<br>
+            <h2>
+                Unlimited Movies,
+                <br>
                 <span>Unlimited Entertainment</span>
             </h2>
 
             <p>
-                Watch the latest movies, popular movies and
-                trending movies all in one place.
+                Explore the latest, trending and popular movies
+                from different genres all in one place.
             </p>
 
             <div class="hero-buttons">
-                <a href="#movies" class="btn">Explore Movies</a>
-                <a href="#popular" class="btn secondary">Popular Movies</a>
+
+                <a href="#movies" class="btn">
+                    Explore Movies
+                </a>
+
+                <a href="#popular" class="btn secondary">
+                    Popular Movies
+                </a>
+
             </div>
 
         </div>
@@ -59,31 +90,80 @@
     </section>
 
 
-    <!-- Search Section -->
-    <section class="search-section">
+    <!-- ================= MOVIES SECTION ================= -->
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search movies..."
-        >
-
-    </section>
-
-
-    <!-- Movies Section -->
     <section class="movies-section" id="movies">
 
         <div class="section-title">
-            <h2>Latest Movies</h2>
-            <p>Explore our latest movie collection</p>
+
+            <h2>Explore Movies</h2>
+
+            <p>
+                Search and discover movies from different genres
+            </p>
+
         </div>
 
 
+        <!-- Search -->
+
+        <div class="search-section">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search movies by name..."
+            >
+
+        </div>
+
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="action">
+                Action
+            </button>
+
+            <button class="category-btn" data-category="comedy">
+                Comedy
+            </button>
+
+            <button class="category-btn" data-category="horror">
+                Horror
+            </button>
+
+            <button class="category-btn" data-category="sci-fi">
+                Sci-Fi
+            </button>
+
+            <button class="category-btn" data-category="drama">
+                Drama
+            </button>
+
+            <button class="category-btn" data-category="romance">
+                Romance
+            </button>
+
+        </div>
+
+
+        <!-- Movie Cards -->
+
         <div class="movie-container" id="movieContainer">
 
+
             <!-- Movie 1 -->
-            <div class="movie-card" data-title="Avengers Endgame">
+
+            <div
+                class="movie-card"
+                data-title="Avengers Endgame"
+                data-category="action">
 
                 <img
                     src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
@@ -91,16 +171,35 @@
                 >
 
                 <div class="movie-info">
+
                     <h3>Avengers: Endgame</h3>
-                    <p>Action | Adventure</p>
+
+                    <p class="genre">
+                        Action | Adventure
+                    </p>
+
+                    <p>
+                        Release: 2019
+                    </p>
+
+                    <p class="description">
+                        Earth's greatest heroes fight to save
+                        the universe from Thanos.
+                    </p>
+
                     <span>⭐ 8.4</span>
+
                 </div>
 
             </div>
 
 
             <!-- Movie 2 -->
-            <div class="movie-card" data-title="Spider Man">
+
+            <div
+                class="movie-card"
+                data-title="Spider Man"
+                data-category="action">
 
                 <img
                     src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
@@ -108,33 +207,71 @@
                 >
 
                 <div class="movie-info">
+
                     <h3>Spider-Man</h3>
-                    <p>Action | Adventure</p>
+
+                    <p class="genre">
+                        Action | Adventure
+                    </p>
+
+                    <p>
+                        Release: 2021
+                    </p>
+
+                    <p class="description">
+                        Spider-Man faces new challenges while
+                        protecting his identity.
+                    </p>
+
                     <span>⭐ 8.2</span>
+
                 </div>
 
             </div>
 
 
             <!-- Movie 3 -->
-            <div class="movie-card" data-title="Batman">
+
+            <div
+                class="movie-card"
+                data-title="Batman"
+                data-category="action">
 
                 <img
                     src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
-                    alt="Batman"
+                    alt="The Batman"
                 >
 
                 <div class="movie-info">
+
                     <h3>The Batman</h3>
-                    <p>Action | Crime</p>
+
+                    <p class="genre">
+                        Action | Crime
+                    </p>
+
+                    <p>
+                        Release: 2022
+                    </p>
+
+                    <p class="description">
+                        Batman investigates a series of crimes
+                        across Gotham City.
+                    </p>
+
                     <span>⭐ 8.0</span>
+
                 </div>
 
             </div>
 
 
             <!-- Movie 4 -->
-            <div class="movie-card" data-title="Joker">
+
+            <div
+                class="movie-card"
+                data-title="Joker"
+                data-category="drama">
 
                 <img
                     src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
@@ -142,16 +279,35 @@
                 >
 
                 <div class="movie-info">
+
                     <h3>Joker</h3>
-                    <p>Crime | Drama</p>
+
+                    <p class="genre">
+                        Crime | Drama
+                    </p>
+
+                    <p>
+                        Release: 2019
+                    </p>
+
+                    <p class="description">
+                        A troubled man faces society and slowly
+                        transforms into the Joker.
+                    </p>
+
                     <span>⭐ 8.5</span>
+
                 </div>
 
             </div>
 
 
             <!-- Movie 5 -->
-            <div class="movie-card" data-title="Interstellar">
+
+            <div
+                class="movie-card"
+                data-title="Interstellar"
+                data-category="sci-fi">
 
                 <img
                     src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
@@ -159,16 +315,35 @@
                 >
 
                 <div class="movie-info">
+
                     <h3>Interstellar</h3>
-                    <p>Sci-Fi | Drama</p>
+
+                    <p class="genre">
+                        Sci-Fi | Drama
+                    </p>
+
+                    <p>
+                        Release: 2014
+                    </p>
+
+                    <p class="description">
+                        A team of astronauts travels through
+                        space searching for a new home.
+                    </p>
+
                     <span>⭐ 8.7</span>
+
                 </div>
 
             </div>
 
 
             <!-- Movie 6 -->
-            <div class="movie-card" data-title="Inception">
+
+            <div
+                class="movie-card"
+                data-title="Inception"
+                data-category="sci-fi">
 
                 <img
                     src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
@@ -176,40 +351,70 @@
                 >
 
                 <div class="movie-info">
+
                     <h3>Inception</h3>
-                    <p>Sci-Fi | Thriller</p>
+
+                    <p class="genre">
+                        Sci-Fi | Thriller
+                    </p>
+
+                    <p>
+                        Release: 2010
+                    </p>
+
+                    <p class="description">
+                        A skilled thief enters people's dreams
+                        to steal valuable secrets.
+                    </p>
+
                     <span>⭐ 8.8</span>
+
                 </div>
 
             </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- Popular Section -->
+    <!-- ================= POPULAR SECTION ================= -->
+
     <section class="popular-section" id="popular">
 
         <div class="section-title">
+
             <h2>Popular Movies</h2>
-            <p>Most watched movies</p>
+
+            <p>
+                Most watched movies
+            </p>
+
         </div>
 
         <div class="popular-content">
 
             <div>
-                <h2>Watch Your Favorite Movies</h2>
+
+                <h2>
+                    Watch Your Favorite Movies
+                </h2>
 
                 <p>
-                    Discover amazing movies from different genres.
-                    Find action, comedy, thriller, science fiction
-                    and adventure movies.
+                    Discover amazing movies from different
+                    genres including action, comedy, horror,
+                    science fiction, drama and romance.
                 </p>
 
-                <button class="btn" onclick="showMessage()">
+                <button
+                    class="btn"
+                    onclick="showMessage()">
+
                     Start Watching
+
                 </button>
+
             </div>
 
         </div>
@@ -217,26 +422,33 @@
     </section>
 
 
-    <!-- About Section -->
+    <!-- ================= ABOUT SECTION ================= -->
+
     <section class="about-section" id="about">
 
         <div class="section-title">
+
             <h2>About MovieHub</h2>
+
         </div>
 
         <p>
-            MovieHub is a frontend movie website project created
-            using HTML, CSS and JavaScript. It provides a simple
-            and responsive interface for exploring movies.
+            MovieHub is a modern and responsive frontend movie
+            website created using HTML, CSS and JavaScript.
+            Users can explore movies, search by movie name
+            and browse movies by genre.
         </p>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <h2>Movie<span>Hub</span></h2>
+        <h2>
+            Movie<span>Hub</span>
+        </h2>
 
         <p>
             © 2026 MovieHub. All Rights Reserved.
@@ -245,7 +457,10 @@
     </footer>
 
 
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
